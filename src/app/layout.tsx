@@ -1,14 +1,13 @@
+import { Toaster } from "sonner";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Outfit } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import "../styles/globals.css";
+import Navbar from "@/components/custom/navbar";
+import Footer from "@/components/custom/footer";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
 });
 
@@ -24,10 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${outfit.className} antialiased`}>
+        <Navbar />
         {children}
+        <Toaster richColors />
+        <Footer />
       </body>
     </html>
   );
