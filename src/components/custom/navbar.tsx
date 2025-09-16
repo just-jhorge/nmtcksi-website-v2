@@ -84,7 +84,7 @@ const navigationLinks = [
 
 export default function Navbar() {
   return (
-    <div className="bg-background sticky top-0 h-16 w-full md:h-20">
+    <div className="bg-background sticky top-0 h-16 w-full">
       <div className="flex-between container mx-auto h-full px-4 md:px-0">
         <div>logo</div>
         <div className="hidden md:block">

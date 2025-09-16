@@ -1,3 +1,8 @@
 export default function Footer() {
-  return <div>Footer</div>;
+  return (
+    <footer>
+      <div>content</div>
+      <div>copyright</div>
+    </footer>
+  );
 }
