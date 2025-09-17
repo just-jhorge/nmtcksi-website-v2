@@ -87,7 +87,7 @@ const navigationLinks = [
 
 export default function Navbar() {
   return (
-    <div className="bg-background sticky top-0 h-16 w-full">
+    <div className="bg-background sticky top-0 z-50 h-16 w-full">
       <div className="container mx-auto grid h-full grid-cols-2 px-4 md:grid-cols-5 md:px-0">
         <Link href="/" className="flex items-center gap-1">
           <Image src={schoolLogo} alt="logo" height={48} width={43} />
