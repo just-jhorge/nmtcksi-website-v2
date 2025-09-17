@@ -1,22 +1,25 @@
-import Link from "next/link";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "../ui/navigation-menu";
-import { ChevronRight, MenuIcon, SearchIcon } from "lucide-react";
 import {
   Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
   SheetTitle,
+  SheetHeader,
+  SheetContent,
   SheetTrigger,
-} from "../ui/sheet";
-import { Separator } from "../ui/separator";
+  SheetDescription,
+} from "@/components/ui/sheet";
+import {
+  NavigationMenu,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuContent,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+
+import Link from "next/link";
+import Image from "next/image";
+import schoolLogo from "@/public/images/logo.webp";
+import { Separator } from "@/components/ui/separator";
+import { ChevronRight, MenuIcon, SearchIcon } from "lucide-react";
 
 const navigationLinks = [
   {
@@ -85,12 +88,21 @@ const navigationLinks = [
 export default function Navbar() {
   return (
     <div className="bg-background sticky top-0 h-16 w-full">
-      <div className="flex-between container mx-auto h-full px-4 md:px-0">
-        <div>logo</div>
-        <div className="hidden md:block">
+      <div className="container mx-auto grid h-full grid-cols-2 px-4 md:grid-cols-5 md:px-0">
+        <Link href="/" className="flex items-center gap-1">
+          <Image src={schoolLogo} alt="logo" height={48} width={43} />
+          <p className="text-xs leading-none text-emerald-600">
+            <span className="font-medium md:font-bold md:uppercase">
+              Nursing and Midwifery
+            </span>{" "}
+            <br />
+            Training College, Kumasi
+          </p>
+        </Link>
+        <div className="col-span-3 hidden items-center justify-center md:flex">
           <NavigationLinks />
         </div>
-        <div className="inline-flex items-center gap-5">
+        <div className="flex items-center justify-end gap-5">
           <SearchIcon className="size-6" />
           <MobileMenuSheet />
         </div>
