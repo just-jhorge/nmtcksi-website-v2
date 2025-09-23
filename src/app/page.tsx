@@ -1,4 +1,6 @@
-import { ChevronDown } from "lucide-react";
+import EventCard from "@/components/custom/event-card";
+import { Button } from "@/components/ui/button";
+import { ChevronDown, ChevronRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -52,19 +54,83 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex h-auto w-full items-center bg-gray-50/50 py-10">
-        <div className="container mx-auto grid grid-cols-1 gap-5 px-4 md:grid-cols-3 md:gap-10 md:px-0">
-          <div>
-            <h3 className="text-primary text-7xl font-bold">40+</h3>
-            <p></p>
+      <section className="flex h-auto w-full items-center bg-gray-50/50 py-14 md:py-20">
+        <div className="container mx-auto grid grid-cols-1 gap-10 px-4 md:grid-cols-3 md:px-0">
+          <div className="flex flex-col items-center justify-center">
+            <h3 className="text-primary text-5xl font-bold md:text-7xl">40+</h3>
+            <p className="text-xl font-medium md:text-2xl">Courses Taught</p>
           </div>
-          <div>
-            <h3 className="text-primary text-7xl font-bold">65+</h3>
-            <p></p>
+          <div className="flex flex-col items-center justify-center">
+            <h3 className="text-primary text-5xl font-bold md:text-7xl">65+</h3>
+            <p className="text-xl font-medium md:text-2xl">Years Completed</p>
           </div>
-          <div>
-            <h3 className="text-primary text-7xl font-bold">40k+</h3>
-            <p></p>
+          <div className="col-span-2 flex flex-col items-center justify-center md:col-span-1">
+            <h3 className="text-primary text-5xl font-bold md:text-7xl">
+              40k+
+            </h3>
+            <p className="text-xl font-medium md:text-2xl">
+              Graduated Students
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="bg-background w-full py-14 md:py-20">
+        <div className="container mx-auto px-4 md:px-0">
+          <h2 className="mb-7 text-4xl font-semibold">Upcoming Events</h2>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
+            {[...new Array(4)].map((_, idx) => (
+              <EventCard
+                key={idx}
+                title="Annual Research Symposium"
+                date="March 15, 2024"
+                time="9:00 AM - 5:00 PM"
+                location="Main Auditorium"
+                description="Join us for a day of groundbreaking research presentations from faculty and graduate students across all departments. Discover innovative projects and network with fellow researchers."
+                category="RESEARCH"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-background w-full py-14 md:py-20">
+        <div className="container mx-auto px-4 md:px-0">
+          <h2 className="mb-7 text-4xl font-semibold">Featured Stories</h2>
+          <div className="mb-5 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
+            {[...new Array(4)].map((_, idx) => (
+              <div key={idx}>
+                <div className="h-96 w-full bg-neutral-100"></div>
+                <p className="line-clamp-3 p-2 text-xl font-medium">
+                  NMTC, Kumasi hosts inaugural conference on reimagining
+                  education in Africa
+                </p>
+              </div>
+            ))}
+          </div>
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-primary text-primary hover:text-primary-foreground hover:bg-primary rounded-none border-2 px-10 py-6 text-lg shadow-none transition-colors duration-300"
+          >
+            Read more stories{" "}
+            <ChevronRight className="text-primary hover:text-primary-foreground size-5" />
+          </Button>
+        </div>
+      </section>
+      <section className="w-full">
+        <div className="grid h-[40rem] w-full grid-cols-2 grid-rows-12 gap-2 md:h-[30rem] md:grid-cols-6">
+          <div className="bg-muted row-span-3 w-full md:row-span-4">1</div>
+          <div className="bg-muted row-span-3 w-full md:row-span-4">2</div>
+          <div className="bg-muted col-span-2 row-span-3 w-full md:row-span-5">
+            3
+          </div>
+          <div className="bg-muted row-span-3 w-full md:col-span-2 md:row-span-12">
+            4
+          </div>
+          <div className="bg-muted row-span-3 w-full md:col-span-2 md:row-span-8">
+            5
+          </div>
+          <div className="bg-muted col-span-2 row-span-3 w-full md:row-span-7">
+            6
           </div>
         </div>
       </section>
