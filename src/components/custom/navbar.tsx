@@ -27,8 +27,6 @@ const navigationLinks = [
     title: "About",
     links: [
       { label: "About NMTC, Kumasi", href: "/about" },
-      { label: "History", href: "/history" },
-      { label: "Governance", href: "/governance" },
       { label: "Our Campus", href: "/campus" },
       { label: "Job Openings", href: "/careers" },
       { label: "Contact Us", href: "/contact" },
@@ -121,13 +119,7 @@ function NavigationLinks() {
             <ul className="grid w-[230px] gap-4">
               <li>
                 <NavigationMenuLink asChild>
-                  <Link href="#">NMTC, Kumasi</Link>
-                </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">History</Link>
-                </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">Governance</Link>
+                  <Link href="/about">NMTC, Kumasi</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
                   <Link href="#">Our Campus</Link>
@@ -267,12 +259,11 @@ function MobileMenuSheet() {
               <Separator className="mb-3" />
               <ul className="flex flex-col space-y-2">
                 {navigation.links.map((link) => (
-                  <li
-                    key={link.href}
-                    className="inline-flex items-center gap-1 text-sm"
-                  >
-                    <ChevronRight className="text-muted-foreground size-3" />
-                    {link.label}
+                  <li key={link.href} className="text-sm">
+                    <Link href={link.href} className="inline-flex">
+                      <ChevronRight className="text-muted-foreground size-3" />
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
