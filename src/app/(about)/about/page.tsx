@@ -50,9 +50,10 @@ export default function Page() {
           <p className="mb-4 text-lg md:text-3xl">
             The college since inception has existed as two colleges running
             nursing and midwifery programmes under two different administrations
-            namely Nurse’s Training College (NTC) and Midwifery Training School
-            (MTS). In 2007, both institutions merged under one administration
-            hence the name Nursing and Midwifery Training College (NMTC).
+            namely Nurse&apos;s Training College (NTC) and Midwifery Training
+            School (MTS). In 2007, both institutions merged under one
+            administration hence the name Nursing and Midwifery Training College
+            (NMTC).
           </p>
           <p className="mb-4 text-lg md:text-3xl">
             The nursing programme was started in 11th January, 1955 with a State
@@ -66,13 +67,14 @@ export default function Page() {
           </p>
           <p className="mb-4 text-lg md:text-3xl">
             The Midwifery programme also started in 1957 with a two year and two
-            and a half year duration depending on one’s entry qualification.
-            These continued until the early 1980s when it was replaced with a
-            one year Post Basic programme after completion of SRN. A three year
-            Registered Midwifery (RM) Diploma programme was introduced in 2003.
-            These programmes run concurrently till 2007 when the certificate was
-            phased out. Currently the college is running a 3-year Diploma in
-            Registered General Nursing and Registered Midwifery.
+            and a half year duration depending on one&apos;s entry
+            qualification. These continued until the early 1980s when it was
+            replaced with a one year Post Basic programme after completion of
+            SRN. A three year Registered Midwifery (RM) Diploma programme was
+            introduced in 2003. These programmes run concurrently till 2007 when
+            the certificate was phased out. Currently the college is running a
+            3-year Diploma in Registered General Nursing and Registered
+            Midwifery.
           </p>
           <p className="text-lg line-through md:text-3xl">
             The College also runs a Two-year Post Nurse Assistant Clinician

@@ -25,12 +25,12 @@ export default function Home() {
             The college boasts state-of-the-art facilities and a dedicated
             faculty of experienced healthcare professionals, ensuring that
             students receive the highest quality education. Additionally, the
-            college's strong emphasis on ethical and compassionate care fosters
-            a culture of empathy, preparing students to serve with integrity and
-            professionalism. Overall, Nursing and Midwifery Training College,
-            Kumasi, stands out as a premier institution that not only imparts
-            top-notch education but also instills values crucial for making a
-            positive impact in the healthcare sector.
+            college&apos;s strong emphasis on ethical and compassionate care
+            fosters a culture of empathy, preparing students to serve with
+            integrity and professionalism. Overall, Nursing and Midwifery
+            Training College, Kumasi, stands out as a premier institution that
+            not only imparts top-notch education but also instills values
+            crucial for making a positive impact in the healthcare sector.
           </p>
         </div>
         <div className="col-span-2 *:flex *:flex-col *:justify-center *:px-6 *:text-white *:md:px-12">
