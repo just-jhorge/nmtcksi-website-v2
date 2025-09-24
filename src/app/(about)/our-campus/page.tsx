@@ -103,7 +103,7 @@ export default function Page() {
             <p>
               Outside the classroom, students have access to recreational spaces
               for relaxation, reflection, and light physical activity. Whether
-              it's spending time with peers in shaded courtyards or
+              it&apos;s spending time with peers in shaded courtyards or
               participating in informal sporting events, the campus offers room
               for balance and well-being. On-campus dining facilities provide
               nutritious, affordable meals prepared to meet diverse dietary
