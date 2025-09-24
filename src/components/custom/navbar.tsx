@@ -5,6 +5,7 @@ import {
   SheetContent,
   SheetTrigger,
   SheetDescription,
+  SheetClose,
 } from "@/components/ui/sheet";
 import {
   NavigationMenu,
@@ -20,6 +21,7 @@ import Image from "next/image";
 import schoolLogo from "@/public/images/logo.webp";
 import { Separator } from "@/components/ui/separator";
 import { ChevronRight, MenuIcon, SearchIcon } from "lucide-react";
+import { Button } from "../ui/button";
 
 const navigationLinks = [
   {
@@ -27,7 +29,7 @@ const navigationLinks = [
     title: "About",
     links: [
       { label: "About NMTC, Kumasi", href: "/about" },
-      { label: "Our Campus", href: "/campus" },
+      { label: "Our Campus", href: "/our-campus" },
       { label: "Job Openings", href: "/careers" },
       { label: "Contact Us", href: "/contact" },
     ],
@@ -122,7 +124,7 @@ function NavigationLinks() {
                   <Link href="/about">NMTC, Kumasi</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Our Campus</Link>
+                  <Link href="/our-campus">Our Campus</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
                   <Link href="#">Job Openings</Link>
@@ -257,16 +259,26 @@ function MobileMenuSheet() {
             <div key={navigation.id}>
               <h4 className="mb-1 font-bold">{navigation.title}</h4>
               <Separator className="mb-3" />
-              <ul className="flex flex-col space-y-2">
+              <div className="flex flex-col space-y-2">
                 {navigation.links.map((link) => (
-                  <li key={link.href} className="text-sm">
-                    <Link href={link.href} className="inline-flex">
-                      <ChevronRight className="text-muted-foreground size-3" />
-                      {link.label}
-                    </Link>
-                  </li>
+                  <SheetClose key={link.href} asChild>
+                    <Button
+                      asChild
+                      size="sm"
+                      variant="link"
+                      className="px-0 text-sm"
+                    >
+                      <Link
+                        href={link.href}
+                        className="flex items-center gap-1"
+                      >
+                        <ChevronRight className="text-muted-foreground size-3" />
+                        {link.label}
+                      </Link>
+                    </Button>
+                  </SheetClose>
                 ))}
-              </ul>
+              </div>
             </div>
           ))}
         </div>

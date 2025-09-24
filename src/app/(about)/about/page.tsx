@@ -7,7 +7,7 @@ export default function Page() {
             <h3 className="text-xl font-semibold text-nowrap md:text-4xl">
               About NMTC, Kumasi
             </h3>
-            <p className="text-lg md:text-3xl">
+            <p className="text-lg font-light md:text-3xl">
               The mission of Nursing and Midwifery Training College, Kumasi is
               to train and turn out competent nursing and midwifery
               professionals to restore, maintain and promote health.
@@ -20,7 +20,7 @@ export default function Page() {
           <h2 className="mb-8 text-xl font-semibold md:text-4xl">
             Welcome to Nursing and Midwifery Training College, Kumasi.
           </h2>
-          <p className="mb-2 text-lg md:text-3xl">
+          <p className="mb-2 text-lg font-light md:text-3xl">
             Nursing and Midwifery Training College - NMTC, Kumasi or KNMTC as
             some may call it, is a leading institution dedicated to providing a
             comprehensive and dynamic learning experience. Situated in the heart
@@ -29,7 +29,7 @@ export default function Page() {
             excellence and our passion for shaping the future of healthcare
             professionals.
           </p>
-          <p className="mb-5 text-lg md:text-3xl">
+          <p className="mb-5 text-lg font-light md:text-3xl">
             We offer a unique curriculum that equips our students with the
             knowledge and skills needed to excel in their careers. Our
             state-of-the-art facilities and experienced faculty ensure that
@@ -47,7 +47,7 @@ export default function Page() {
           <h2 className="mb-8 text-xl font-semibold md:text-4xl">
             The Full Story
           </h2>
-          <p className="mb-4 text-lg md:text-3xl">
+          <p className="mb-4 text-lg font-light md:text-3xl">
             The college since inception has existed as two colleges running
             nursing and midwifery programmes under two different administrations
             namely Nurse&apos;s Training College (NTC) and Midwifery Training
@@ -55,7 +55,7 @@ export default function Page() {
             administration hence the name Nursing and Midwifery Training College
             (NMTC).
           </p>
-          <p className="mb-4 text-lg md:text-3xl">
+          <p className="mb-4 text-lg font-light md:text-3xl">
             The nursing programme was started in 11th January, 1955 with a State
             Registered Nursing (SRN) certificate program which was three year
             duration. In 1968, a two-year Enrolled Nursing (EN) programme was
@@ -65,7 +65,7 @@ export default function Page() {
             A Registered General Nursing (RGN) Diploma programme was introduced
             in 1999 and that is what is currently running.
           </p>
-          <p className="mb-4 text-lg md:text-3xl">
+          <p className="mb-4 text-lg font-light md:text-3xl">
             The Midwifery programme also started in 1957 with a two year and two
             and a half year duration depending on one&apos;s entry
             qualification. These continued until the early 1980s when it was
@@ -76,7 +76,7 @@ export default function Page() {
             3-year Diploma in Registered General Nursing and Registered
             Midwifery.
           </p>
-          <p className="text-lg line-through md:text-3xl">
+          <p className="text-lg font-light line-through md:text-3xl">
             The College also runs a Two-year Post Nurse Assistant Clinician
             /Nurse Assistant Preventive (NAC/NAP) certificate in Midwifery
             programme since September, 2016.
