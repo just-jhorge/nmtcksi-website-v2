@@ -7,7 +7,7 @@ export default function Page() {
             Teaching, Learning and <br /> Research
           </h2>
           <p className="flex-1 text-lg md:text-2xl">
-            At NMTC Kumasi, education goes beyond the classroom — it’s a
+            At NMTC Kumasi, education goes beyond the classroom — it&apos;s a
             transformative journey that empowers students to think critically,
             lead with integrity, and innovate in healthcare delivery. With a
             renewed focus on research and strategic partnerships, the College is
@@ -35,7 +35,7 @@ export default function Page() {
               individuals and families. Emphasis is placed on ethical practice,
               critical thinking, and effective communication, preparing
               graduates to become professional nurses who contribute
-              meaningfully to Ghana’s healthcare system and beyond.
+              meaningfully to Ghana&apos;s healthcare system and beyond.
             </p>
           </div>
         </div>
