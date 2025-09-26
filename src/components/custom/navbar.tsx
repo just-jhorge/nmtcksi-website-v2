@@ -170,10 +170,7 @@ function NavigationLinks() {
                   <Link href="#">Academic Calendar</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Support &amp; Advicing</Link>
-                </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">Transcripts &amp; Certificates</Link>
+                  <Link href="#">Transcripts</Link>
                 </NavigationMenuLink>
               </li>
             </ul>
