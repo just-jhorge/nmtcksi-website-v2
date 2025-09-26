@@ -31,7 +31,7 @@ const navigationLinks = [
       { label: "About NMTC, Kumasi", href: "/about" },
       { label: "Our Campus", href: "/our-campus" },
       { label: "Job Openings", href: "/careers" },
-      { label: "Contact Us", href: "/contact" },
+      { label: "Contact Us", href: "/contact-us" },
     ],
   },
   {
@@ -115,6 +115,22 @@ function NavigationLinks() {
   return (
     <NavigationMenu viewport={false} className="w-full">
       <NavigationMenuList>
+        {/* {navigationLinks.map((link) => (
+          <NavigationMenuItem key={link.id}>
+            <NavigationMenuTrigger>{link.title}</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid w-[230px] gap-4">
+                {link.links.map((item) => (
+                  <li key={item.href}>
+                    <NavigationMenuLink asChild>
+                      <Link href={item.href}>{item.label}</Link>
+                    </NavigationMenuLink>
+                  </li>
+                ))}
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+        ))} */}
         <NavigationMenuItem>
           <NavigationMenuTrigger>About</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -130,7 +146,7 @@ function NavigationLinks() {
                   <Link href="#">Job Openings</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Contact Us</Link>
+                  <Link href="/contact-us">Contact Us</Link>
                 </NavigationMenuLink>
               </li>
             </ul>
@@ -262,20 +278,10 @@ function MobileMenuSheet() {
               <div className="flex flex-col space-y-2">
                 {navigation.links.map((link) => (
                   <SheetClose key={link.href} asChild>
-                    <Button
-                      asChild
-                      size="sm"
-                      variant="link"
-                      className="px-0 text-sm"
-                    >
-                      <Link
-                        href={link.href}
-                        className="flex items-center gap-1"
-                      >
-                        <ChevronRight className="text-muted-foreground size-3" />
-                        {link.label}
-                      </Link>
-                    </Button>
+                    <Link href={link.href} className="flex items-center gap-1">
+                      <ChevronRight className="text-muted-foreground size-3" />
+                      {link.label}
+                    </Link>
                   </SheetClose>
                 ))}
               </div>
