@@ -38,7 +38,7 @@ const navigationLinks = [
     id: 2,
     title: "Academics",
     links: [
-      { label: "Programs of Study", href: "/programmes" },
+      { label: "Programs of Study", href: "/programs-of-study" },
       { label: "Course Catalog", href: "/courses" },
       { label: "Faulty & Staff", href: "/faculty" },
       { label: "Academic Calendar", href: "/academic" },
@@ -158,7 +158,7 @@ function NavigationLinks() {
             <ul className="grid w-[230px] gap-4">
               <li>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Programs of Study</Link>
+                  <Link href="/programs-of-study">Programs of Study</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
                   <Link href="#">Course Catalog</Link>
