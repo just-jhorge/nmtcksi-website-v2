@@ -1,10 +1,13 @@
+import Image from "next/image";
+import placeholder from "@/public/images/placeholder.svg";
+
 export default function Page() {
   return (
     <>
       <section className="bg-accent w-full py-12 md:py-20">
         <div className="container mx-auto flex flex-col gap-5 px-4 md:flex-row md:gap-20 md:px-0">
-          <h2 className="w-full text-2xl font-bold md:w-[35%] md:text-5xl">
-            Teaching, Learning and <br /> Research
+          <h2 className="font-bricolage w-full text-2xl font-bold md:w-[35%] md:text-5xl">
+            Teaching, Learning &amp; <br /> Research
           </h2>
           <p className="flex-1 text-lg md:text-2xl">
             At NMTC Kumasi, education goes beyond the classroom — it&apos;s a
@@ -18,11 +21,16 @@ export default function Page() {
       </section>
       <section className="bg-primary w-full">
         <div className="container mx-auto flex flex-col gap-5 md:flex-row md:gap-20">
-          <div className="aspect-square w-full bg-gray-100 md:w-[35%]">
-            image
+          <div className="relative aspect-square w-full bg-gray-100 md:w-[35%]">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
           </div>
           <div className="flex-1 px-4 py-12 text-right md:px-0 md:py-20">
-            <h2 className="mb-6 text-2xl font-semibold md:text-4xl">
+            <h2 className="font-bricolage mb-6 text-2xl font-semibold md:text-4xl">
               Registered General Nursing (RGN)
             </h2>
             <p className="text-lg md:text-2xl">
@@ -43,7 +51,7 @@ export default function Page() {
       <section className="bg-secondary w-full">
         <div className="container mx-auto flex flex-col-reverse gap-5 md:flex-row md:gap-20">
           <div className="flex-1 px-4 py-12 md:px-0 md:py-20">
-            <h2 className="mb-6 text-2xl font-semibold md:text-4xl">
+            <h2 className="font-bricolage mb-6 text-2xl font-semibold md:text-4xl">
               Registered Midwifery (RM)
             </h2>
             <p className="text-lg md:text-2xl">
@@ -59,8 +67,13 @@ export default function Page() {
               health outcomes in Ghana and across the region.
             </p>
           </div>
-          <div className="aspect-square w-full bg-gray-100 md:w-[35%]">
-            image
+          <div className="relative aspect-square w-full bg-gray-100 md:w-[35%]">
+            <Image
+              src={placeholder}
+              fill
+              alt="programme_image"
+              className="object-cover"
+            />
           </div>
         </div>
       </section>

@@ -1,6 +1,8 @@
-import EventCard from "@/components/custom/event-card";
 import { Button } from "@/components/ui/button";
+import EventCard from "@/components/custom/event-card";
 import { ChevronDown, ChevronRight } from "lucide-react";
+import placeholder from "@/public/images/placeholder.svg";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -98,7 +100,14 @@ export default function Home() {
           <div className="mb-5 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
             {[...new Array(4)].map((_, idx) => (
               <div key={idx}>
-                <div className="h-96 w-full bg-neutral-100"></div>
+                <div className="relative h-96 w-full bg-neutral-100">
+                  <Image
+                    src={placeholder}
+                    fill
+                    alt="event_image"
+                    className="object-cover"
+                  />
+                </div>
                 <p className="line-clamp-3 p-2 text-xl font-medium">
                   NMTC, Kumasi hosts inaugural conference on reimagining
                   education in Africa
@@ -118,19 +127,53 @@ export default function Home() {
       </section>
       <section className="w-full">
         <div className="grid h-[40rem] w-full grid-cols-2 grid-rows-12 gap-2 md:h-[30rem] md:grid-cols-6">
-          <div className="bg-muted row-span-3 w-full md:row-span-4">1</div>
-          <div className="bg-muted row-span-3 w-full md:row-span-4">2</div>
-          <div className="bg-muted col-span-2 row-span-3 w-full md:row-span-5">
-            3
+          <div className="bg-muted relative row-span-3 w-full md:row-span-4">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
           </div>
-          <div className="bg-muted row-span-3 w-full md:col-span-2 md:row-span-12">
-            4
+          <div className="bg-muted relative row-span-3 w-full md:row-span-4">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
           </div>
-          <div className="bg-muted row-span-3 w-full md:col-span-2 md:row-span-8">
-            5
+          <div className="bg-muted relative col-span-2 row-span-3 w-full md:row-span-5">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
           </div>
-          <div className="bg-muted col-span-2 row-span-3 w-full md:row-span-7">
-            6
+          <div className="bg-muted relative row-span-3 w-full md:col-span-2 md:row-span-12">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="bg-muted relative row-span-3 w-full md:col-span-2 md:row-span-8">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="bg-muted relative col-span-2 row-span-3 w-full md:row-span-7">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
           </div>
         </div>
       </section>

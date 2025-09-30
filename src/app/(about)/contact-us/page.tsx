@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <section className="bg-background h-[90svh] w-full px-4 md:px-0">
       <div className="flex h-full w-full flex-col items-center justify-center">
-        <h1 className="mb-8 text-2xl font-bold md:mb-10 md:text-5xl">
+        <h1 className="font-bricolage mb-8 text-2xl font-bold md:mb-10 md:text-5xl">
           Maps and Contact Information
         </h1>
         <div className="space-y-5 text-center">

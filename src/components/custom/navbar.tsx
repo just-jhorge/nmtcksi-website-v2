@@ -20,7 +20,22 @@ import Link from "next/link";
 import Image from "next/image";
 import schoolLogo from "@/public/images/logo.webp";
 import { Separator } from "@/components/ui/separator";
-import { ChevronRight, MenuIcon, SearchIcon } from "lucide-react";
+import {
+  Briefcase,
+  Building2,
+  CheckCheckIcon,
+  ChevronRight,
+  FileText,
+  GraduationCap,
+  HistoryIcon,
+  ListChecksIcon,
+  ListCollapse,
+  MailIcon,
+  MenuIcon,
+  SearchIcon,
+  ShapesIcon,
+  Users,
+} from "lucide-react";
 import { Button } from "../ui/button";
 
 const navigationLinks = [
@@ -40,9 +55,7 @@ const navigationLinks = [
     links: [
       { label: "Programs of Study", href: "/programs-of-study" },
       { label: "Course Catalog", href: "/courses" },
-      { label: "Faulty & Staff", href: "/faculty" },
-      { label: "Academic Calendar", href: "/academic" },
-      { label: "Support & Advice", href: "/support" },
+      { label: "Faulty & Staff", href: "/faculty-and-staff" },
       { label: "Certificates", href: "/certificates" },
     ],
   },
@@ -52,7 +65,7 @@ const navigationLinks = [
     links: [
       { label: "Why NMTC, Kumasi", href: "/why-us" },
       { label: "How to Apply", href: "/how-to-apply" },
-      { label: "Entry Requirement", href: "/entry-requirement" },
+      { label: "Entry Requirement", href: "/entry-requirements" },
       { label: "Check Admission Status", href: "/check-status" },
     ],
   },
@@ -136,17 +149,21 @@ function NavigationLinks() {
           <NavigationMenuContent>
             <ul className="grid w-[230px] gap-4">
               <li>
-                <NavigationMenuLink asChild>
-                  <Link href="/about">NMTC, Kumasi</Link>
+                <NavigationMenuLink href="/about">
+                  <HistoryIcon />
+                  NMTC, Kumasi
                 </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="/our-campus">Our Campus</Link>
+                <NavigationMenuLink href="/our-campus">
+                  <Building2 />
+                  Our Campus
                 </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">Job Openings</Link>
+                <NavigationMenuLink href="#">
+                  <Briefcase />
+                  Job Openings
                 </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="/contact-us">Contact Us</Link>
+                <NavigationMenuLink href="/contact-us">
+                  <MailIcon />
+                  Contact Us
                 </NavigationMenuLink>
               </li>
             </ul>
@@ -157,41 +174,21 @@ function NavigationLinks() {
           <NavigationMenuContent>
             <ul className="grid w-[230px] gap-4">
               <li>
-                <NavigationMenuLink asChild>
-                  <Link href="/programs-of-study">Programs of Study</Link>
+                <NavigationMenuLink href="/programs-of-study">
+                  <GraduationCap className="size-5" />
+                  Programs of Study
                 </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">Course Catalog</Link>
+                <NavigationMenuLink href="#">
+                  <ShapesIcon className="size-5" />
+                  Course Catalog
                 </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">Faculty &amp; Staff</Link>
+                <NavigationMenuLink href="/faculty-and-staff">
+                  <Users className="size-5" />
+                  Faculty &amp; Staff
                 </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">Academic Calendar</Link>
-                </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">Transcripts</Link>
-                </NavigationMenuLink>
-              </li>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Admissions</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[230px] gap-4">
-              <li>
-                <NavigationMenuLink asChild>
-                  <Link href="#">Why NMTC, Kumasi</Link>
-                </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">How to Apply</Link>
-                </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">Entry Requirements</Link>
-                </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">Check Admission Status</Link>
+                <NavigationMenuLink href="#">
+                  <FileText className="text-muted-foreground" />
+                  Request Transcript
                 </NavigationMenuLink>
               </li>
             </ul>
@@ -213,6 +210,27 @@ function NavigationLinks() {
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
                   <Link href="#">E-Library</Link>
+                </NavigationMenuLink>
+              </li>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Admissions</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[230px] gap-4">
+              <li>
+                <NavigationMenuLink href="/how-to-apply">
+                  <ListCollapse />
+                  How to Apply
+                </NavigationMenuLink>
+                <NavigationMenuLink href="/entry-requirements">
+                  <ListChecksIcon />
+                  Entry Requirements
+                </NavigationMenuLink>
+                <NavigationMenuLink href="#">
+                  <CheckCheckIcon />
+                  Check Admission Status
                 </NavigationMenuLink>
               </li>
             </ul>

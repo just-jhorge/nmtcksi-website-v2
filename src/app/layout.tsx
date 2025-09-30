@@ -1,13 +1,18 @@
 import { Toaster } from "sonner";
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
-
-import "../styles/globals.css";
+import { Outfit, Bricolage_Grotesque } from "next/font/google";
 import Navbar from "@/components/custom/navbar";
 import Footer from "@/components/custom/footer";
 
+import "../styles/globals.css";
+
 const outfit = Outfit({
   variable: "--font-outfit",
+  subsets: ["latin"],
+});
+
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-bricolage",
   subsets: ["latin"],
 });
 

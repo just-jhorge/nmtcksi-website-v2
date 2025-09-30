@@ -1,11 +1,12 @@
-import React from "react";
+import Image from "next/image";
+import placeholder from "@/public/images/placeholder.svg";
 
 export default function Page() {
   return (
     <>
       <section className="w-full bg-amber-50 py-12 md:py-20">
         <div className="mx-auto max-w-6xl px-4 text-center md:px-0">
-          <h3 className="mb-3 text-lg font-semibold md:mb-6 md:text-5xl">
+          <h3 className="font-bricolage mb-3 text-lg font-semibold md:mb-6 md:text-5xl">
             Our Beautiful Campus
           </h3>
           <p className="text-sm font-light md:text-2xl">
@@ -20,8 +21,6 @@ export default function Page() {
       </section>
       <section className="aspect-video w-full bg-black md:aspect-auto md:h-[calc(100svh-4rem)]">
         <iframe
-          // width="560"
-          // height="315"
           className="h-full w-full"
           src="https://www.youtube.com/embed/ths9XdWJmo0?si=rtBmQ_N2cilUg8sS&amp;controls=1&amp;start=11"
           title="YouTube video player"
@@ -63,30 +62,119 @@ export default function Page() {
               system and beyond.
             </p>
           </div>
-          <div className="col-span-2 mr-24 hidden h-full bg-neutral-200 md:block">
-            image
+          <div className="relative col-span-2 mr-24 hidden h-full bg-neutral-100 md:block">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
           </div>
         </div>
       </section>
       <section className="w-full">
         <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
       <section className="bg-accent w-full py-14 md:py-20">
         <div className="container mx-auto px-4 md:px-0">
-          <h1 className="mb-4 text-xl font-semibold md:mb-8 md:text-5xl">
+          <h1 className="font-bricolage mb-4 text-xl font-semibold md:mb-8 md:text-5xl">
             Housing, Recreation &amp; Dining
           </h1>
           <div className="space-y-4 text-sm md:text-2xl">
@@ -115,18 +203,102 @@ export default function Page() {
       </section>
       <section className="w-full">
         <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
-          <div className="aspect-square w-full bg-neutral-200">image</div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square w-full bg-neutral-200">
+            <Image
+              src={placeholder}
+              fill
+              alt="gallery_image"
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
     </>

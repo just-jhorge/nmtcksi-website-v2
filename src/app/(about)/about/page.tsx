@@ -4,7 +4,7 @@ export default function Page() {
       <section className="bg-accent w-full py-14 md:py-20">
         <div className="container mx-auto px-4 md:px-0">
           <div className="flex flex-col items-start gap-3 md:flex-row md:gap-32">
-            <h3 className="text-xl font-semibold text-nowrap md:text-4xl">
+            <h3 className="font-bricolage text-xl font-semibold text-nowrap md:text-4xl">
               About NMTC, Kumasi
             </h3>
             <p className="text-lg font-light md:text-3xl">
@@ -17,7 +17,7 @@ export default function Page() {
       </section>
       <section className="w-full py-14 md:py-20">
         <article className="container mx-auto px-4 md:px-0">
-          <h2 className="mb-8 text-xl font-semibold md:text-4xl">
+          <h2 className="font-bricolage mb-8 text-xl font-semibold md:text-4xl">
             Welcome to Nursing and Midwifery Training College, Kumasi.
           </h2>
           <p className="mb-2 text-lg font-light md:text-3xl">
@@ -44,7 +44,7 @@ export default function Page() {
       </section>
       <section className="bg-accent w-full py-14 md:py-20">
         <div className="container mx-auto px-4 md:px-0">
-          <h2 className="mb-8 text-xl font-semibold md:text-4xl">
+          <h2 className="font-bricolage mb-8 text-xl font-semibold md:text-4xl">
             The Full Story
           </h2>
           <p className="mb-4 text-lg font-light md:text-3xl">
@@ -87,7 +87,9 @@ export default function Page() {
         <div className="grid grid-cols-1 md:grid-cols-3">
           <div className="w-full bg-amber-300 px-4 py-10 md:px-0">
             <div className="mx-auto flex max-w-md flex-col items-start justify-center">
-              <h2 className="mb-3 text-lg font-semibold">Mission</h2>
+              <h2 className="font-bricolage mb-3 text-lg font-semibold">
+                Mission
+              </h2>
               <p className="text-base md:text-lg">
                 To train and turn out competent nursing and midwifery
                 professionals to restore, maintain and promote health.
@@ -96,7 +98,9 @@ export default function Page() {
           </div>
           <div className="w-full bg-black px-4 py-10 text-amber-200 md:px-0">
             <div className="mx-auto flex max-w-md flex-col items-start justify-center">
-              <h2 className="mb-3 text-lg font-semibold">Vision</h2>
+              <h2 className="font-bricolage mb-3 text-lg font-semibold">
+                Vision
+              </h2>
               <p className="text-base md:text-lg">
                 To become a center of excellence for the training of health
                 professionals in the delivery of high-quality patient care in
@@ -106,7 +110,9 @@ export default function Page() {
           </div>
           <div className="w-full bg-green-500 px-4 py-10 md:px-0">
             <div className="mx-auto flex max-w-md flex-col items-start justify-center">
-              <h2 className="mb-3 text-lg font-semibold">Core Values</h2>
+              <h2 className="font-bricolage mb-3 text-lg font-semibold">
+                Core Values
+              </h2>
               <ul className="list-inside list-disc text-base md:text-lg">
                 <li>Discipline</li>
                 <li>Excellence</li>
